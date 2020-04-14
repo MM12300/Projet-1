@@ -314,10 +314,23 @@ nav{
         font-size:1.5rem;
         padding: 20px;
     }
+
     /* SECTION 1 */
-    #section1 > div > section{
-        width: 50%;
+    #section1 > div{
+        flex-direction:row-reverse;
+        justify-content:center;
     }
+    #section1 h2{
+        margin-top:20px;
+    }
+    #section1 > div img{
+        width:30%;
+    }
+    #section1 > div p {
+        width:20%;
+        align-self:center;
+    }
+
         /* SECTION 4 */
     #description{
         padding: 20px;
@@ -347,6 +360,10 @@ nav{
     /* FORMULAIRE DE CONTACT */
     #formulaire input, #formulaire textarea, #formulaire button{
         font-size:1.3rem;
+    }
+    .form{
+        width:70%;
+        align-self:center;
     }
     
 }
@@ -389,13 +406,10 @@ nav{
     #section1, #section2, #evolution, #formulaire{
         padding: 20px 5vw;
     } 
-    /* SECTION 1 */   
-        #section1 h2{
-        margin-top:20px;
-    }
+
     /* SECTION 2 */
     #responsive{
-        padding: 50px 10vw 0;
+        padding: 20px;
     }
     #responsive p{
         font-size:1.3rem;
