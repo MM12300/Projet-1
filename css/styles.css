@@ -1,0 +1,420 @@
+/* !!!!!!!!!!!!! GLOBAL !!!!!!!!!!!! */
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+h1, h2{
+    text-transform:uppercase;
+    margin:0;
+}
+a{
+text-decoration:none;
+color:white;
+}
+a:visited {color:white; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:white; }
+a:hover, a:active { text-decoration: none; color:black }
+a:hover, a:active { text-decoration: none; color:black }
+
+
+/* !!!!!!!!!!!!! MENU !!!!!!!!!!!! */
+#menu{
+
+    position:sticky;
+    top:0%;
+    padding:10px;
+    z-index:500;
+    display:flex;
+    justify-content:end;
+    flex-direction:column;
+    display:none;
+}
+#menu ul{
+    margin:0;
+    list-style:none;
+    align-self:end;
+    display:none;
+    background-color:rgba(161, 173, 235, 0.8);
+    padding:10px;
+    border-radius:0.10rem;
+}
+#menu ul li{
+    padding-right:20px;
+}
+#bouton{
+    background-color:#dd5a72;
+    text-align:center;
+    padding: 10px 20px;
+    border:0;
+    margin:0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    transition: all 0.2s;
+    align-self:end;
+}
+#bouton:hover{
+    color:#000000;
+    background-color:#e9ebfa;
+    }
+/* !!!!!!!!!!!!! HEADER !!!!!!!!!!!! */
+/* TITRE ET IMAGES SLIDE */
+header{
+    color:white;
+    text-align: center;
+}
+header > div{
+    position: relative;
+}
+header img{
+    width: 100%;
+    object-fit: cover;
+}
+.titre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.titre i{
+    font-size: 6em;
+}
+.titre h1, .titre h2, .titre a{
+    display: none;
+}
+.cercles{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ICONES SLIDE */
+.fa-chevron-left, .fa-chevron-right{
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.fa-chevron-left{
+    left: 15px;
+}
+.fa-chevron-right{
+    right: 15px;
+}
+
+/* NAV */
+nav{
+    background-color:#5a72dd;
+}
+nav h2{
+    padding-top:0.7%;
+}
+nav ul{
+    display:flex;
+    flex-direction:row;
+    list-style:none;
+    justify-content:center;
+    margin:0;
+    padding-top:1%;
+    padding-bottom:1%;
+    font-size:1rem;
+}
+nav ul li{
+    padding-right:20px;
+}
+
+
+/* !!!!!!!!!!!!! MAIN !!!!!!!!!!!! */
+/* SECTION 1 */
+#section1{
+    text-align: center;
+    padding: 20px;
+    background-color:#e9ebfa;
+}
+#section1 > div{
+    display: flex;
+    flex-direction:column;
+}   
+#section1 div img{
+    width:100%;
+}
+#section1 > div > section:first-child{
+    text-align: left;
+}
+
+#section1 div p span{
+    font-weight:bold;
+}
+
+
+
+/* SECTION 2 */
+#responsive{
+    color: white;
+    background: url(../images/agenceparallax-1.JPG) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;    
+    padding-top:20px;
+    font-weight: bold;
+}
+#responsive img{
+    width: 100%;
+}
+/* SECTION 4 */
+#description{
+    background-color:#e9ebfa;
+    padding: 20px;
+    display: grid;
+    text-align: center;
+    grid-gap: 50px;
+    grid-template-columns: 1fr;
+}
+#description i{
+    font-size: 5em;
+}
+#description p{
+    margin-bottom:0;
+}
+/* SECTION 5 */
+#exemple{
+    padding: 10px;
+    background-color:white;
+    text-align: center;
+}
+#exemple div{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr;
+    text-align: left;
+}
+#exemple div img{
+    width: 100%;
+}
+#exemple div article p:last-child{
+    font-style:italic;
+}
+/* EVOLUTION */
+#evolution{
+    background-color:#e9ebfa;
+    color: black;
+    padding: 20px;
+}
+#evolution div{
+    text-align: center;
+    margin-bottom:10px;
+}
+#evolution img{
+    width:80px;
+}
+#evolution > div > img{
+    margin: 5px;
+}
+#evolution article{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+}
+#evolution article h2{
+    color: black;
+    font-size: 1em;
+    text-align:center;
+}
+
+/* CONTACT */
+#formulaire{
+    background-color: #5a72dd;
+    color: white;
+    padding: 10px 10vw;
+    display:flex;
+    flex-direction:column;
+}
+#formulaire > h2{
+    margin-bottom:20px;
+    text-align:center;
+}
+#formulaire input, #formulaire textarea,#formulaire button{
+    display: block;
+    border: none;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px;
+    padding-right: 0;
+    font-family: "Open Sans", sans-serif;
+    resize: none;
+    box-sizing: border-box;
+}
+#formulaire button{
+    background-color:#dd5a72;
+    color: white;
+}
+#formulaire span{
+    color:white;
+}
+.mdp{
+    position: relative;
+}
+.fa-eye, .fa-eye-slash{
+    /* display: none; */
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color:black;
+    font-size:20px;
+}
+
+/* !!!!!!!!!!!!! FOOTER !!!!!!!!!!!! */
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color:#e9ebfa;
+}
+footer p{
+    margin:0;
+}
+    /* FLECHE TO TOP */
+.top{
+    position:fixed;
+    bottom:15px;
+    right:15px;
+    padding: 15px;
+    display: none;
+    background-color:#dd5a72;
+    border-radius:10px;
+}
+nav{
+    display:none;
+}
+/* !!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!! */
+/* VUE TABLETTE */
+@media screen and (min-width: 700px){
+    h2{
+        font-size:2rem;
+    }
+    .titre h1, .titre h2{
+        display:block;
+    }   
+
+    #menu ul{
+        font-size:1.5rem;
+        padding: 20px;
+    }
+    /* SECTION 1 */
+    #section1 > div > section{
+        width: 50%;
+    }
+        /* SECTION 4 */
+    #description{
+        padding: 20px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /* SECTION 5 */
+    #exemple{
+        padding: 20px;
+    }
+    #exemple div{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* EVOLUTION */
+    #evolution article{
+        display:flex;
+        flex-direction: row;
+    }   
+    #evolution article h2{
+        font-size:1.2rem;
+    }
+    #evolution article p{
+        width: 85%;
+        margin:0;
+        padding-left: 25px;
+        align-self:center;
+    }    
+    /* FORMULAIRE DE CONTACT */
+    #formulaire input, #formulaire textarea, #formulaire button{
+        font-size:1.3rem;
+    }
+    
+}
+
+/* VUE GRAND ÉCRAN */
+@media screen and (min-width: 1200px){
+    nav{
+        display:block;
+    }
+    /* HEADER */
+    header{
+        height: 100vh;
+    }
+    header img{
+        height: calc(100vh - 100px);
+    } 
+    #menu{
+        display:none !important;
+    }
+    /* TITRE */
+    .titre h1{
+        font-size: 6em;
+        font-weight: bolder;
+        margin: 0;
+        display: block;
+    }
+    .titre h2{
+        font-weight: bold;
+        display: block;
+        margin-bottom:20px;
+    }
+    .titre a{        
+        background-color: #dd5a72;
+        color: white;
+        text-decoration: none;
+        padding:10px;
+        font-weight: bold;
+        display: inline;
+    }      
+    #section1, #section2, #evolution, #formulaire{
+        padding: 20px 5vw;
+    } 
+    /* SECTION 1 */   
+        #section1 h2{
+        margin-top:20px;
+    }
+    /* SECTION 2 */
+    #responsive{
+        padding: 50px 10vw 0;
+    }
+    #responsive p{
+        font-size:1.3rem;
+    }
+    
+ 
+    /* EVOLUTION */
+    #evolution article h2{
+        text-align: right;
+        margin-right:5px;
+    }
+
+    /* CONTACT */
+    #formulaire input, #formulaire textarea,#formulaire button{
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
