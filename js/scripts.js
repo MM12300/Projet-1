@@ -162,12 +162,11 @@ function afficheBouton(){
     let windowPosition = window.scrollY;
     let fleche = document.querySelector(".top");
     let menu = document.querySelector("#menu");
-    let titre = document.querySelector("header > h2")
     //si la position du scroll dépasse la hauteur de la navbar on affiche la fleche et le menu
     if(windowPosition > navbarPosition){
         fleche.style.display = "block";
         menu.style.display = "flex";
-        titre.style.display = "none";
+
         
     }else{
         fleche.style.display = "none";
