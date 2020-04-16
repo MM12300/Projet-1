@@ -1,4 +1,18 @@
 /* !!!!!!!!!!!!! GLOBAL !!!!!!!!!!!! */
+#vortex {
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -69,7 +83,7 @@ a:hover, a:active { text-decoration: none; color:black }
     background-color:#e9ebfa;
     }
 /* !!!!!!!!!!!!! HEADER !!!!!!!!!!!! */
-/* TITRE ET IMAGES SLIDE */
+/* TITLE & SLIDE */
 header{
     color:white;
     text-align: center;
@@ -328,7 +342,7 @@ nav{
         width:30%;
     }
     #section1 > div p {
-        width:20%;
+        width:70%;
         align-self:center;
     }
 
@@ -421,6 +435,7 @@ nav{
     #evolution article h2{
         text-align: right;
         margin-right:5px;
+        padding-left:100px;
     }
 
     /* CONTACT */
