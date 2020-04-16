@@ -138,7 +138,7 @@ nav h2{
     padding-bottom:1%;
     font-size:1rem;
     position:absolute;
-    top:5%;
+    top:7%;
     left:50%;
     transform: translate(-50%,50%);
     z-index:100;
@@ -174,12 +174,10 @@ transition: all 0.4s ease 0s;
     padding: 20px;
     background-color:#e9ebfa;
 }
-#section1 > div{
-    display: flex;
-    flex-direction:column;
-}   
+
 #section1 div img{
     width:100%;
+    margin-bottom:20px;
 }
 #section1 > div {
     text-align: center;
@@ -349,10 +347,15 @@ nav{
 /* !!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!! */
 /* VUE TABLETTE */
 @media screen and (min-width: 700px){
+    #section1 div img {
+        width: 50%;
+        align-self:center;
+    }
+    
     h2{
         font-size:2rem;
     }
-    .titre h1, .titre h2{
+    .titre h1{
         display:block;
     }   
 
@@ -361,22 +364,6 @@ nav{
         padding: 20px;
     }
 
-    /* SECTION 1 */
-    #section1 > div{
-        flex-direction:row-reverse;
-        justify-content:center;
-    }
-    #section1 h2{
-        margin-top:20px;
-    }
-
-    
-    #section1 > div p {
-        align-self:center;
-    }
-    #about{
-        width:70%;
-    }
 
         /* SECTION 4 */
     #description{
@@ -421,12 +408,30 @@ nav{
         padding: 20px;
         grid-template-columns: repeat(4, 1fr);
         }
+    #section1 > div > div{
+        flex-direction:row;
+    }
+    /* SECTION 1 */
+
+
+    #section1 > div > p {
+        padding-left: 15vw;
+        padding-right :15vw;
+        margin-bottom:30px;
+    }
+    
 }
 /* VUE GRAND ÉCRAN */
 @media screen and (min-width: 1200px){
+    #section1 div img {
+        width:100%;
+    }
+    
     nav{
         display:block;
     }
+
+
     /* HEADER */
     header{
         height: 100vh;
@@ -459,9 +464,15 @@ nav{
         font-weight: bold;
         display: inline;
     }      
-    #section1, #section2, #evolution, #formulaire{
+    #section1, #section2, #evolution, #formulaire, #exemple{
         padding: 20px 5vw;
     } 
+
+    /*SECTION 1 */
+    #section1 h2{
+        margin-top:30px;
+    }
+
 
     /* SECTION 2 */
     #responsive{
@@ -477,6 +488,7 @@ nav{
         text-align: right;
         margin-right:5px;
         padding-left:100px;
+        font-size:2rem;
     }
 
     /* CONTACT */
