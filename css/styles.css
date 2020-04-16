@@ -1,18 +1,4 @@
 /* !!!!!!!!!!!!! GLOBAL !!!!!!!!!!!! */
-#vortex {
-    animation: rotation 2s infinite linear;
-}
-
-@keyframes rotation {
-    from {
-            -webkit-transform: rotate(0deg);
-    }
-    to {
-            -webkit-transform: rotate(359deg);
-    }
-}
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -38,7 +24,7 @@ a:focus { text-decoration: none; color:white; }
 a:hover, a:active { text-decoration: none; color:black }
 a:hover, a:active { text-decoration: none; color:black }
 
-
+/* !!!!!!!!!!!!! HEADER !!!!!!!!!!!! */
 /* !!!!!!!!!!!!! MENU !!!!!!!!!!!! */
 #menu{
 
@@ -82,7 +68,7 @@ a:hover, a:active { text-decoration: none; color:black }
     color:#000000;
     background-color:#e9ebfa;
     }
-/* !!!!!!!!!!!!! HEADER !!!!!!!!!!!! */
+
 /* TITLE & SLIDE */
 header{
     color:white;
@@ -167,8 +153,14 @@ nav ul li{
 #section1 div img{
     width:100%;
 }
-#section1 > div > section:first-child{
-    text-align: left;
+#section1 > div {
+    text-align: center;
+}
+
+#section1 > div > div{
+    display:flex;
+    flex-direction:column;
+
 }
 
 #section1 div p span{
@@ -249,7 +241,18 @@ nav ul li{
     font-size: 1em;
     text-align:center;
 }
+#vortex {
+    animation: rotation 2s infinite linear;
+}
 
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
 /* CONTACT */
 #formulaire{
     background-color: #5a72dd;
@@ -338,18 +341,19 @@ nav{
     #section1 h2{
         margin-top:20px;
     }
-    #section1 > div img{
-        width:30%;
-    }
+
+    
     #section1 > div p {
-        width:70%;
         align-self:center;
+    }
+    #about{
+        width:70%;
     }
 
         /* SECTION 4 */
     #description{
         padding: 20px;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 2fr);
     }
     /* SECTION 5 */
     #exemple{
@@ -383,6 +387,13 @@ nav{
     
 }
 
+
+@media screen and (min-width: 900px){
+    #description{
+        padding: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        }
+}
 /* VUE GRAND ÉCRAN */
 @media screen and (min-width: 1200px){
     nav{
