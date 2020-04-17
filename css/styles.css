@@ -125,8 +125,8 @@ header img{
 nav{
     background-color:#5a72dd;
 }
-nav h2{
-    padding :2%;
+nav h1{
+    padding :1%;
 }
 #largemenu{
     display:flex;
@@ -348,11 +348,13 @@ nav{
 /* VUE TABLETTE */
 @media screen and (min-width: 700px){
     #section1 div img {
-        width: 50%;
+        width: 70%;
         align-self:center;
     }
-    
-    h2{
+    nav h1{
+        font-size:3rem;
+    }
+    h1{
         font-size:2rem;
     }
     .titre h1{
@@ -403,29 +405,12 @@ nav{
 }
 
 
-@media screen and (min-width: 900px){
-    #description{
-        padding: 20px;
-        grid-template-columns: repeat(4, 1fr);
-        }
-    #section1 > div > div{
-        flex-direction:row;
-    }
-    /* SECTION 1 */
-
-
-    #section1 > div > p {
-        padding-left: 15vw;
-        padding-right :15vw;
-        margin-bottom:30px;
-    }
-    
-}
 /* VUE GRAND ÉCRAN */
 @media screen and (min-width: 1200px){
-    #section1 div img {
-        width:100%;
-    }
+    
+    
+
+    
     
     nav{
         display:block;
@@ -468,12 +453,31 @@ nav{
         padding: 20px 5vw;
     } 
 
-    /*SECTION 1 */
-    #section1 h2{
-        margin-top:30px;
+    #rightside{
+        display:flex;
     }
 
+   /* SECTION 1 */
 
+    #section1 > div > div{
+        flex-direction:row;
+    }
+    #section1 > div > p {
+        padding-left: 15vw;
+        padding-right :15vw;
+        margin-bottom:30px;
+    }
+    #section1 div img {
+        width:150%;
+    }
+    /* #section1 h2{
+        margin-top:30px;
+    } */
+    #description{
+        align-self:center;
+        padding: 20px;
+        grid-template-columns: repeat(4, 1fr);
+    }
     /* SECTION 2 */
     #responsive{
         padding: 20px;
@@ -481,8 +485,6 @@ nav{
     #responsive p{
         font-size:1.3rem;
     }
-    
- 
     /* EVOLUTION */
     #evolution article h2{
         text-align: right;
@@ -490,7 +492,6 @@ nav{
         padding-left:100px;
         font-size:2rem;
     }
-
     /* CONTACT */
     #formulaire input, #formulaire textarea,#formulaire button{
         font-size: 1.5em;
