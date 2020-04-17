@@ -1,6 +1,6 @@
 //!!!!!!!!!!!!!!!!SLIDE !!!!!!!!!!!!!!!!!!!!
 //Images du slide
-let images = ["images/agenceslider-1.jpg", "images/agenceslider-2.jpg", "images/agenceslider-3.jpg"];
+let images = ["images/agenceslider-1.JPG", "images/agenceslider-2.JPG", "images/agenceslider-3.JPG"];
 //Index du slide
 let index = 0;
 //intervalle du slide
