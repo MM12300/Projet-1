@@ -248,7 +248,7 @@ function checkMdp() {
     let mdp2 = this.value;
     console.log(this)
     if (mdp1 != mdp2) {
-        this.parentElement.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i> <p>* Leux deux mots de passe sont différents</p>"
+        this.parentElement.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i> <p>* Vos mots de passe sont différents.</p>"
         this.style.border = "2px solid red";
         mdp.style.border = "2px solid red";
 
