@@ -127,6 +127,7 @@ nav{
 }
 nav h1{
     padding :1%;
+    font-size:0.8rem;
 }
 #largemenu{
     display:flex;
@@ -356,7 +357,7 @@ footer p{
     background-color:#dd5a72;
     border-radius:10px;
 }
-nav{
+#largemenu{
     display:none;
 }
 /* !!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!! */
