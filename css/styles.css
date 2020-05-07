@@ -438,9 +438,10 @@ nav{
 
 
     /* HEADER */
-    header{
+    /* fixer la VH apporte que des problèmes */
+    /* header{
         height: 100vh;
-    }
+    } */
     header img{
         height: calc(100vh - 100px);
     } 
