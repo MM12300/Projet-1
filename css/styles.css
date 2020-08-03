@@ -2,103 +2,133 @@
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     box-sizing: border-box;
 }
-img{
+
+img {
     vertical-align: middle;
 }
-h1, h2{
-    text-transform:uppercase;
-    margin:0;
+
+h1, h2 {
+    text-transform: uppercase;
+    margin: 0;
 }
-a{
-text-decoration:none;
-color:white;
+
+a {
+    text-decoration: none;
+    color: white;
 }
-a:visited {color:white; }
-a:hover { text-decoration: none; color:white; }
-a:focus { text-decoration: none; color:white; }
-a:hover, a:active { text-decoration: none; color:black }
-a:hover, a:active { text-decoration: none; color:black }
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: black
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: black
+}
 
 /* !!!!!!!!!!!!! HEADER !!!!!!!!!!!! */
 /* !!!!!!!!!!!!! MENU !!!!!!!!!!!! */
-#menu{
-    position:sticky;
-    top:0%;
-    padding:10px;
-    z-index:500;
-    display:flex;
-    justify-content:end;
-    flex-direction:column;
-    display:none;
+#menu {
+    position: sticky;
+    top: 0%;
+    padding: 10px;
+    z-index: 500;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    display: none;
 }
-#menu ul{
-    margin:0;
-    list-style:none;
-    align-self:end;
-    display:none;
-    background-color:rgba(161, 173, 235, 0.8);
-    padding:10px;
-    border-radius:0.10rem;
+
+#menu ul {
+    margin: 0;
+    list-style: none;
+    align-self: end;
+    display: none;
+    background-color: rgba(161, 173, 235, 0.8);
+    padding: 10px;
+    border-radius: 0.10rem;
 }
-#menu ul li{
-    padding-right:20px;
+
+#menu ul li {
+    padding-right: 20px;
 }
 
 
-
-#bouton{
-    background-color:#dd5a72;
-    text-align:center;
+#bouton {
+    background-color: #dd5a72;
+    text-align: center;
     padding: 10px 20px;
-    border:0;
-    margin:0;
-    border-radius:0.12em;
+    border: 0;
+    margin: 0;
+    border-radius: 0.12em;
     box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:#FFFFFF;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
     transition: all 0.2s;
-    align-self:end;
+    align-self: end;
 
 }
 
 
-#bouton:hover{
-    color:#000000;
-    background-color:#e9ebfa;
-    }
+#bouton:hover {
+    color: #000000;
+    background-color: #e9ebfa;
+}
 
 /* TITLE & SLIDE */
-header{
-    color:white;
+header {
+    color: white;
     text-align: center;
 }
-header > div{
+
+header > div {
     position: relative;
 }
-header img{
+
+header img {
     width: 100%;
     object-fit: cover;
 }
-.titre{
+
+.titre {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.titre i{
+
+.titre i {
     font-size: 6em;
 }
-.titre h1, .titre h2, .titre a{
+
+.titre h1, .titre h2, .titre a {
     display: none;
 }
-.cercles{
+
+.cercles {
     position: absolute;
     bottom: 15px;
     left: 50%;
@@ -106,7 +136,7 @@ header img{
 }
 
 /* ICONES SLIDE */
-.fa-chevron-left, .fa-chevron-right{
+.fa-chevron-left, .fa-chevron-right {
     position: absolute;
     color: white;
     font-size: 3em;
@@ -114,182 +144,208 @@ header img{
     top: 50%;
     transform: translateY(-50%)
 }
-.fa-chevron-left{
+
+.fa-chevron-left {
     left: 15px;
 }
-.fa-chevron-right{
+
+.fa-chevron-right {
     right: 15px;
 }
-.fa-chevron-left:hover, .fa-chevron-right:hover{
-    color:#5a72dd;
+
+.fa-chevron-left:hover, .fa-chevron-right:hover {
+    color: #5a72dd;
 }
 
 /* NAV */
-nav{
-    background-color:#5a72dd;
-}
-nav h1{
-    padding :1%;
-    font-size:1.1rem;
+nav {
+    background-color: #5a72dd;
 }
 
-#largemenu{
+nav h1 {
+    padding: 1%;
+    font-size: 1.1rem;
+}
+
+#largemenu {
     list-style-type: none;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin:0;
+    margin: 0;
     padding: 1% 0;
     text-transform: uppercase;
     font-weight: bold;
-    font-size : 1.2rem;
+    font-size: 1.2rem;
     border-top: solid 2px white;
     border-bottom: solid 2px white;
-    display:none;
+    display: none;
 }
 
-#largemenu a:hover{
-    color : #dd5a72;
+#largemenu a:hover {
+    color: #dd5a72;
 }
 
 /* !!!!!!!!!!!!! MAIN !!!!!!!!!!!! */
 /* SECTION 1 */
-#section1{
+#section1 {
     text-align: center;
     padding: 20px;
-    background-color:#e9ebfa;
+    background-color: #e9ebfa;
 }
 
-#section1 div img{
-    width:100%;
-    margin-bottom:20px;
+#section1 div img {
+    width: 100%;
+    margin-bottom: 20px;
 }
+
 #section1 > div {
     text-align: center;
 }
 
-#section1 > div > div{
-    display:flex;
-    flex-direction:column;
+#section1 > div > div {
+    display: flex;
+    flex-direction: column;
 
 }
 
-#section1 div p span{
-    font-weight:bold;
+#section1 div p span {
+    font-weight: bold;
 }
 
 /* SECTION 2 */
-#responsive{
+#responsive {
     color: white;
     background: url(../images/agenceparallax-1.JPG) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    text-align: center;    
-    padding-top:20px;
+    text-align: center;
+    padding-top: 20px;
     font-weight: bold;
 }
-#responsive img{
+
+#responsive img {
     width: 100%;
 }
+
 /* SECTION 4 */
-#description{
-    background-color:#e9ebfa;
+#description {
+    background-color: #e9ebfa;
     padding: 20px;
     display: grid;
     text-align: center;
     grid-gap: 50px;
     grid-template-columns: 1fr;
 }
-#description i{
+
+#description i {
     font-size: 5em;
 }
-#description p{
-    margin-bottom:0;
+
+#description p {
+    margin-bottom: 0;
 }
+
 /* SECTION 5 */
-#exemple{
+#exemple {
     padding: 10px;
-    background-color:white;
+    background-color: white;
     text-align: center;
 }
-#exemple div{
+
+#exemple div {
     display: grid;
     grid-gap: 50px;
     grid-template-columns: 1fr;
     text-align: left;
 }
-#exemple div img{
+
+#exemple div img {
     width: 100%;
 }
-#exemple div article p:last-child{
-    font-style:italic;
+
+#exemple div article p:last-child {
+    font-style: italic;
 }
+
 /* EVOLUTION */
-#evolution{
-    background-color:#e9ebfa;
+#evolution {
+    background-color: #e9ebfa;
     color: black;
     padding: 20px;
 }
-#evolution div{
+
+#evolution div {
     text-align: center;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
-#evolution img{
-    width:80px;
+
+#evolution img {
+    width: 80px;
 }
-#evolution > div > img{
+
+#evolution > div > img {
     margin: 5px;
 }
-#evolution article{
-    display:flex;
+
+#evolution article {
+    display: flex;
     flex-direction: column;
-    text-align:center;
+    text-align: center;
 }
-#evolution article h2{
+
+#evolution article h2 {
     color: black;
     font-size: 1em;
-    text-align:center;
+    text-align: center;
 }
+
 #vortex {
     animation: rotation 2s infinite linear;
 }
 
 @keyframes rotation {
     from {
-            -webkit-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
     to {
-            -webkit-transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
     }
 }
+
 /* CONTACT */
-#formulaire{
+#formulaire {
     background-color: #5a72dd;
     color: white;
     padding: 10px 10vw;
-    display:flex;
-    flex-direction:column;
-}
-#formulaire > h2{
-    margin-bottom:10px;
-    text-align:center;
+    display: flex;
+    flex-direction: column;
 }
 
-#formulaire > h3{
-    margin:0;
-    display:flex;
+#formulaire > h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#formulaire > h3 {
+    margin: 0;
+    display: flex;
     flex-direction: row;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     justify-content: center;
 }
-#formulaire > h3 > i{
-    padding-right:5px;
+
+#formulaire > h3 > i {
+    padding-right: 5px;
+    align-self: center;
 }
-#formulaire > h3 > p{
-    font-size:0.6rem;
-    font-weight:normal;
+
+#formulaire > h3 > p {
+    font-size: 0.9rem;
+    font-weight: normal;
 }
-#formulaire input, #formulaire textarea,#formulaire button{
+
+#formulaire input, #formulaire textarea, #button {
     display: block;
     border: none;
     width: 100%;
@@ -300,119 +356,138 @@ nav h1{
     resize: none;
     box-sizing: border-box;
 }
-#formulaire button{
-    background-color:#dd5a72;
+
+#button {
+    background-color: #dd5a72;
+    color: white;
+    text-align: center;
+}
+
+#formulaire span {
     color: white;
 }
-#formulaire span{
-    color:white;
-}
-.mdp{
+
+.mdp {
     position: relative;
 }
-.fa-eye, .fa-eye-slash{
-    /* display: none; */
+
+.fa-eye, .fa-eye-slash {
     position: absolute;
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
-    color:black;
-    font-size:20px;
+    color: black;
+    font-size: 20px;
 }
 
 /* !!!!!!!!!!!!! FOOTER !!!!!!!!!!!! */
-footer{
+footer {
     padding: 20px;
     text-align: center;
-    background-color:#e9ebfa;
+    background-color: #e9ebfa;
 }
-footer p{
-    margin:0;
+
+footer p {
+    margin: 0;
 }
-    /* FLECHE TO TOP */
-.top{
-    position:fixed;
-    bottom:15px;
-    right:15px;
+
+/* FLECHE TO TOP */
+.top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
     padding: 15px;
     display: none;
-    background-color:#dd5a72;
-    border-radius:10px;
+    background-color: #dd5a72;
+    border-radius: 10px;
 }
 
 /* !!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!! */
 /* VUE TABLETTE */
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) {
     #section1 div img {
         width: 70%;
-        align-self:center;
+        align-self: center;
     }
-    nav h1{
-        font-size:3rem;
-    }
-    h1{
-        font-size:2rem;
-    }
-    .titre h1{
-        display:block;
-    }   
 
-    #menu ul{
-        font-size:1.5rem;
+    nav h1 {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .titre h1 {
+        display: block;
+    }
+
+    #menu ul {
+        font-size: 1.5rem;
         padding: 20px;
     }
-    #largemenu{
-        display:flex;
+
+    #largemenu {
+        display: flex;
     }
 
-        /* SECTION 4 */
-    #description{
+    /* SECTION 4 */
+    #description {
         padding: 20px;
         grid-template-columns: repeat(2, 2fr);
     }
+
     /* SECTION 5 */
-    #exemple{
+    #exemple {
         padding: 20px;
     }
-    #exemple div{
+
+    #exemple div {
         grid-template-columns: repeat(3, 1fr);
     }
+
     /* EVOLUTION */
-    #evolution article{
-        display:flex;
+    #evolution article {
+        display: flex;
         flex-direction: row;
-    }   
-    #evolution article h2{
-        font-size:1.2rem;
     }
-    #evolution article p{
+
+    #evolution article h2 {
+        font-size: 1.2rem;
+    }
+
+    #evolution article p {
         width: 85%;
-        margin:0;
+        margin: 0;
         padding-left: 25px;
-        align-self:center;
-    }    
+        align-self: center;
+    }
+
     /* FORMULAIRE DE CONTACT */
-    #formulaire input, #formulaire textarea, #formulaire button{
-        font-size:1.2rem;
+    #formulaire input, #formulaire textarea, #button {
+        font-size: 1.2rem;
     }
-    .form{
-        width:70%;
-        align-self:center;
+
+    .form {
+        width: 70%;
+        align-self: center;
     }
-    #formulaire > h3 > p{
-        font-size:1rem;
-        font-weight:normal;
-        margin:0;
+
+    #formulaire > h3 > p {
+        font-size: 1rem;
+        font-weight: normal;
+        margin: 0;
     }
-    
+
 }
 
 
 /* VUE GRAND ÉCRAN */
-@media screen and (min-width: 1200px){
-    nav{
-        display:block;
+@media screen and (min-width: 1200px) {
+    nav {
+        display: block;
     }
+
     /* HEADER */
     /* fixer la VH apporte que des problèmes */
     /* header{
@@ -421,80 +496,91 @@ footer p{
     /*header img{*/
     /*    height: calc(100vh - 100px);*/
     /*} */
-    #menu{
-        display:none !important;
+    #menu {
+        display: none !important;
     }
+
     /* TITRE */
-    .titre h1{
+    .titre h1 {
         font-size: 6em;
         font-weight: bolder;
         margin: 0;
         display: block;
         text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
     }
-    .titre h2{
+
+    .titre h2 {
         font-weight: bold;
         display: block;
-        margin-bottom:20px;
+        margin-bottom: 20px;
         text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
     }
-    .titre a{        
+
+    .titre a {
         background-color: #5a72dd;
         color: white;
         text-decoration: none;
-        padding:10px;
+        padding: 10px;
         font-weight: bold;
         display: inline;
     }
-    .titre a:hover{
+
+    .titre a:hover {
         background-color: #dd5a72;
 
     }
-    #section1, #section2, #evolution, #formulaire, #exemple{
+
+    #section1, #section2, #evolution, #formulaire, #exemple {
         padding: 20px 5vw;
-    } 
-
-    #rightside{
-        display:flex;
     }
 
-   /* SECTION 1 */
-
-    #section1 > div > div{
-        flex-direction:row;
+    #rightside {
+        display: flex;
     }
+
+    /* SECTION 1 */
+    #section1 > div > div {
+        flex-direction: row;
+    }
+
     #section1 > div > p {
         padding-left: 15vw;
-        padding-right :15vw;
-        margin-bottom:30px;
+        padding-right: 15vw;
+        margin-bottom: 30px;
     }
+
     #section1 div img {
-        width:150%;
+        width: 150%;
     }
+
     /* #section1 h2{
         margin-top:30px;
     } */
-    #description{
-        align-self:center;
+    #description {
+        align-self: center;
         padding: 20px;
         grid-template-columns: repeat(4, 1fr);
     }
+
     /* SECTION 2 */
-    #responsive{
+    #responsive {
         padding: 20px;
     }
-    #responsive p{
-        font-size:1.3rem;
+
+    #responsive p {
+        font-size: 1.3rem;
     }
+
     /* EVOLUTION */
-    #evolution article h2{
+    #evolution article h2 {
         text-align: right;
-        margin-right:5px;
-        padding-left:100px;
-        font-size:2rem;
+        margin-right: 5px;
+        padding-left: 100px;
+        font-size: 2rem;
     }
+
     /* CONTACT */
-    #formulaire input, #formulaire textarea,#formulaire button{
+    #formulaire input, #formulaire textarea, #button {
         font-size: 1.5em;
     }
 }

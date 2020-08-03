@@ -204,11 +204,15 @@ function checkMail() {
     let email = document.querySelector("[name='email1']");
     let email1 = email.value;
     let email2 = this.value;
-    if (email1 !== email2 || (email1 === "" || email2=== "")) {
-        this.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i><p>* Les adresses emails indiquées sont vides ou différentes.</p>"
+    if (email1 !== email2) {
+        this.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i><p>* Les adresses emails indiquées sont différentes.</p>"
         this.style.border = "2px solid red";
         email.style.border = "2px solid red";
 
+    }else if((email1 === "" || email2=== "")){
+        this.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i><p>* Merci d'indiquer une adresse email et sa vérification.</p>"
+        this.style.border = "2px solid red";
+        email.style.border = "2px solid red";
     } else {
         this.nextElementSibling.innerText = "";
         this.style.border = "2px solid green";
@@ -247,11 +251,15 @@ function checkMdp() {
     let mdp1 = mdp.value;
     let mdp2 = this.value;
     console.log(this)
-    if (mdp1 !== mdp2 || (mdp1 === "" || mdp2=== "")) {
-        this.parentElement.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i> <p>* Les mots de passe indiqués sont vides ou différents.</p>"
+    if (mdp1 !== mdp2 ) {
+        this.parentElement.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i> <p>* Les mots de passe indiqués sont différents.</p>"
         this.style.border = "2px solid red";
         mdp.style.border = "2px solid red";
 
+    } else if ((mdp1 === "" || mdp2=== "")) {
+        this.parentElement.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i> <p>* Merci d'indiquer un mot de passe et sa vérification.</p>"
+        this.style.border = "2px solid red";
+        mdp.style.border = "2px solid red";
     } else {
         this.parentElement.nextElementSibling.innerText = "";
         this.style.border = "2px solid green";
