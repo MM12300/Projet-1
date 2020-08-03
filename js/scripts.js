@@ -31,7 +31,7 @@ window.onload = () => {
     let cercles = document.querySelector(".cercles");
     let balises = "";
     for(let ligne = 0; ligne < images.length; ligne++){
-        if(ligne == 0){
+        if(ligne === 0){
             balises = balises + "<i class='fas fa-circle'></i>";
         }else{
             balises = balises + "<i class='far fa-circle'></i>";
@@ -66,7 +66,7 @@ window.onload = () => {
 
 
     //MENU BOUTON !!!!!!!!!!!!!!!!!!!!
-    var menubouton = document.querySelector("#bouton");
+    let menubouton = document.querySelector("#bouton");
     menubouton.addEventListener("click", menu);
 
 } // !!!!!!!!!!!!!!!!Fin window.onload !!!!!!!!!!!
@@ -74,13 +74,13 @@ window.onload = () => {
 // BOUTON MENU !!!!!!!!!!!!!!!!!
 function menu(){
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
+    let content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {
       content.style.display = "block";
     }
-  };
+  }
 
 
 
@@ -111,7 +111,7 @@ function changeImage(){
     let balisesI = document.querySelectorAll(".cercles i");
     // On parcourt toutes les balises I
     for(let ligne = 0; ligne < balisesI.length; ligne++){
-        if(ligne == index){
+        if(ligne === index){
             // Si la balise correspond à l'image, on met un rond plein
             balisesI[ligne].classList.replace("far", "fas");
         }else{
@@ -136,7 +136,7 @@ function reculeImage(){
     let cercles = document.querySelectorAll(".cercles i");
     for(let rond = 0; rond < cercles.length; rond++){
         cercles[rond].classList.replace("fas", "far");
-        if(rond == index){
+        if(rond === index){
             cercles[rond].classList.replace("far", "fas");
         }
     }
@@ -204,7 +204,7 @@ function checkMail() {
     let email = document.querySelector("[name='email1']");
     let email1 = email.value;
     let email2 = this.value;
-    if (email1 != email2) {
+    if (email1 !== email2) {
         this.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i><p>* Les adresses mails sont différentes.</p>"
         this.style.border = "2px solid red";
         email.style.border = "2px solid red";
@@ -219,10 +219,10 @@ function checkMail() {
 
 //FUNCTION POUR AFFICHER LE PREMIER MDP
 function showPassword1() {
-    if (document.querySelector("#mdpinput1").type == "password") {
+    if (document.querySelector("#mdpinput1").type === "password") {
         document.querySelector("#mdpinput1").type = "text";
         boutton1.setAttribute("class", "far fa-eye-slash");
-    } else if (document.querySelector("#mdpinput1").type = "text") {
+    } else if (document.querySelector("#mdpinput1").type === "text") {
         document.querySelector("#mdpinput1").type = "password";
         boutton1.setAttribute("class", "far fa-eye");
     }
@@ -231,10 +231,10 @@ function showPassword1() {
 
 //FUNCTION POUR AFFICHER LE SECOND MDP
 function showPassword2() {
-    if (document.querySelector("#mdpinput2").type == "password") {
+    if (document.querySelector("#mdpinput2").type === "password") {
         document.querySelector("#mdpinput2").type = "text";
         boutton2.setAttribute("class", "far fa-eye-slash");
-    } else if (document.querySelector("#mdpinput2").type = "text") {
+    } else if (document.querySelector("#mdpinput2").type === "text") {
         document.querySelector("#mdpinput2").type = "password";
         boutton2.setAttribute("class", "far fa-eye");
     }
@@ -247,7 +247,7 @@ function checkMdp() {
     let mdp1 = mdp.value;
     let mdp2 = this.value;
     console.log(this)
-    if (mdp1 != mdp2) {
+    if (mdp1 !== mdp2) {
         this.parentElement.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i> <p>* Vos mots de passe sont différents.</p>"
         this.style.border = "2px solid red";
         mdp.style.border = "2px solid red";
