@@ -204,8 +204,8 @@ function checkMail() {
     let email = document.querySelector("[name='email1']");
     let email1 = email.value;
     let email2 = this.value;
-    if (email1 !== email2) {
-        this.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i><p>* Les adresses mails sont différentes.</p>"
+    if (email1 !== email2 || (email1 === "" || email2=== "")) {
+        this.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i><p>* Les adresses emails indiquées sont vides ou différentes.</p>"
         this.style.border = "2px solid red";
         email.style.border = "2px solid red";
 
@@ -247,8 +247,8 @@ function checkMdp() {
     let mdp1 = mdp.value;
     let mdp2 = this.value;
     console.log(this)
-    if (mdp1 !== mdp2) {
-        this.parentElement.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i> <p>* Vos mots de passe sont différents.</p>"
+    if (mdp1 !== mdp2 || (mdp1 === "" || mdp2=== "")) {
+        this.parentElement.nextElementSibling.innerHTML = "<i class='las la-exclamation-triangle'></i> <p>* Les mots de passe indiqués sont vides ou différents.</p>"
         this.style.border = "2px solid red";
         mdp.style.border = "2px solid red";
 
