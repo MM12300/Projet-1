@@ -284,12 +284,13 @@ nav h1{
 }
 #formulaire > h3 > i{
     padding-right:5px;
+    align-self: center;
 }
 #formulaire > h3 > p{
-    font-size:0.6rem;
+    font-size:0.9rem;
     font-weight:normal;
 }
-#formulaire input, #formulaire textarea,#formulaire button{
+#formulaire input, #formulaire textarea,#button{
     display: block;
     border: none;
     width: 100%;
@@ -300,9 +301,10 @@ nav h1{
     resize: none;
     box-sizing: border-box;
 }
-#formulaire button{
+#button{
     background-color:#dd5a72;
     color: white;
+    text-align: center;
 }
 #formulaire span{
     color:white;
@@ -311,7 +313,6 @@ nav h1{
     position: relative;
 }
 .fa-eye, .fa-eye-slash{
-    /* display: none; */
     position: absolute;
     top: 50%;
     right: 15px;
@@ -392,7 +393,7 @@ footer p{
         align-self:center;
     }    
     /* FORMULAIRE DE CONTACT */
-    #formulaire input, #formulaire textarea, #formulaire button{
+    #formulaire input, #formulaire textarea, #button{
         font-size:1.2rem;
     }
     .form{
@@ -494,7 +495,7 @@ footer p{
         font-size:2rem;
     }
     /* CONTACT */
-    #formulaire input, #formulaire textarea,#formulaire button{
+    #formulaire input, #formulaire textarea, #button{
         font-size: 1.5em;
     }
 }
