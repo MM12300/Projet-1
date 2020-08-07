@@ -51,10 +51,9 @@ a:hover, a:active {
 /* !!!!!!!!!!!!! MENU !!!!!!!!!!!! */
 #menu {
     position: sticky;
-    top: 0%;
+    top: 0;
     padding: 10px;
     z-index: 500;
-    display: flex;
     justify-content: end;
     flex-direction: column;
     display: none;
@@ -169,7 +168,6 @@ nav h1 {
 
 #largemenu {
     list-style-type: none;
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 0;
@@ -216,9 +214,8 @@ nav h1 {
 /* SECTION 2 */
 #responsive {
     color: white;
-    background: url(../images/agenceparallax-1.JPG) no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
+    background: url(../images/agenceparallax-1.JPG) no-repeat fixed center;
     text-align: center;
     padding-top: 20px;
     font-weight: bold;
@@ -350,8 +347,7 @@ nav h1 {
     border: none;
     width: 100%;
     margin-bottom: 5px;
-    padding: 5px;
-    padding-right: 0;
+    padding: 5px 0 5px 5px;
     font-family: "Open Sans", sans-serif;
     resize: none;
     box-sizing: border-box;
@@ -427,10 +423,6 @@ footer p {
         padding: 20px;
     }
 
-    #largemenu {
-        display: flex;
-    }
-
     /* SECTION 4 */
     #description {
         padding: 20px;
@@ -487,15 +479,10 @@ footer p {
     nav {
         display: block;
     }
+    #largemenu {
+        display: flex;
+    }
 
-    /* HEADER */
-    /* fixer la VH apporte que des problèmes */
-    /* header{
-        height: 100vh;
-    } */
-    /*header img{*/
-    /*    height: calc(100vh - 100px);*/
-    /*} */
     #menu {
         display: none !important;
     }
